@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import logo from '../../assets/logo.svg';
 import check from '../../assets/check.svg';
@@ -29,7 +30,7 @@ const Site: React.FC = () => (
           </ul>
         </div>
         <div className="logins-header">
-          <a href="/">Entrar</a>
+          <Link to="/app/login">Entrar</Link>
           <button>Quero Meu Cartão</button>
         </div>
       </Header>
