@@ -6,11 +6,12 @@ interface IInput {
   value: string;
   placeholder: string;
   onChange: Function;
+  type?: string;
 }
 
-const Input: React.FC<IInput> = ({ placeholder, onChange, value }) =>
+const Input: React.FC<IInput> = ({ placeholder, onChange, value, type }) =>
   <InputContainer
-    type="text"
+    type={type || 'text'}
     placeholder={placeholder}
     onChange={() => onChange()}
     value={value} />;

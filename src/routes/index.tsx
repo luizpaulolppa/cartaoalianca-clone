@@ -7,6 +7,7 @@ import Home from '../pages/Home';
 import PersonalData from '../pages/PersonalData';
 import Dependants from '../pages/Dependants';
 import ResetPassword from '../pages/ResetPassword';
+import NewDependant from '../pages/NewDependant';
 
 const Routes: React.FC = () => (
   <Switch>
@@ -15,6 +16,8 @@ const Routes: React.FC = () => (
     <Route path="/app/home" exact component={Home} />
     <Route path="/app/dados-pessoais" exact component={PersonalData} />
     <Route path="/app/dependentes" exact component={Dependants} />
+    <Route path="/app/dependentes/novo" exact component={NewDependant} />
+    {/* <Route path="/app/dependentes/:id" exact component={Dependants} /> */}
     <Route path="/app/alterar-senha" exact component={ResetPassword} />
   </Switch>
 );

@@ -68,7 +68,7 @@ const Dashboard: React.FC = ({ children }) => {
                 <img src={arrowLeftPurple} alt="Seta para direita" />
               </ItemMenu>
               <ItemMenu
-                className={checkIfActive(['/app/dependentes']) ? 'active' : ''}
+                className={checkIfActive(['/app/dependentes', '/app/dependentes/novo']) ? 'active' : ''}
                 onClick={() => history.push('/app/dependentes')}>
                 <div>
                   <img src={iconPeople} alt="Home" />

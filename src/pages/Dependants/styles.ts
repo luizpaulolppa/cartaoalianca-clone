@@ -9,28 +9,67 @@ export const Container = styled.div`
   }
 `;
 
-export const Cards = styled.div`
+export const ListDependants = styled.div`
   display: flex;
+  flex-wrap: wrap;
   margin-top: 1rem;
 `;
 
-export const Card = styled.div`
+export const Dependant = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 138px;
-  height: 108px;
-  margin: 0.5rem;
+  justify-content: space-between;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05);
   border-radius: 6px;
-  border: 1px solid #F6F6F6;
-  text-align: center;
-  cursor: pointer;
+  width: 285px;
+  margin: 0.5rem;
+  padding: 1rem;
 
-  &:hover {
-    background-color: #F8F8F8;
+  .content-photo {
+    .photo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      height: 48px;
+      width: 48px;
+      border: 1px solid #933C85;
+    }
   }
 
+  .content-data {
+    .label {
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 18px;
+      color: #999999;
+    }
+    .value {
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 18px;
+      color: #2F2F2F;
+    }
+  }
+
+  .content-action {
+    img {
+      cursor: pointer;
+    }
+  }
+`;
+
+export const Title = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
   p {
-    margin-top: 0.5rem;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration-line: underline;
+    color: #933C85;
+    cursor: pointer;
   }
 `;

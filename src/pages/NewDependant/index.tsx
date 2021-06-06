@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 
 import Dashboard from '../../components/Dashboard';
-import Input from '../../components/Input';
 import Button from '../../components/Button';
+import Input from '../../components/Input';
 
 import { Container, Form } from './styles';
 
-const PersonalData: React.FC = () => {
+const Dependants: React.FC = () => {
   const [name, setName] = useState('');
   const [cpf, setCpf] = useState('');
   const [phone, setPhone] = useState('');
@@ -16,7 +16,7 @@ const PersonalData: React.FC = () => {
     <Dashboard>
       <Container>
         <Form>
-          <h1>Alterar dados pessoáis</h1>
+          <h1>Novo dependente</h1>
           <Input placeholder="Nome" onChange={setName} value={name} />
           <Input placeholder="CPF" onChange={setCpf} value={cpf} />
           <Input placeholder="Telefone" onChange={setPhone} value={phone} />
@@ -28,4 +28,4 @@ const PersonalData: React.FC = () => {
   )
 }
 
-export default PersonalData;
+export default Dependants;
